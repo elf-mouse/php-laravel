@@ -138,7 +138,7 @@ class PublicController extends Controller
 
 > `User\PublicController.php`同上
 
-## View（`views/admin/login.blade.php`）
+## View（`views/admin/login.blade.php`和`views/user/login.blade.php`）
 
 ```
 <!doctype html>
@@ -168,3 +168,5 @@ class PublicController extends Controller
 
 </html>
 ```
+
+> `user/login.blade.php`同上
