@@ -136,6 +136,8 @@ class PublicController extends Controller
 }
 ```
 
+> `User\PublicController.php`同上
+
 ## View（`views/admin/login.blade.php`）
 
 ```

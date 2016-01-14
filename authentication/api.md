@@ -21,7 +21,9 @@
 
 ## Middleware
 
-运行`php artisan make:middleware ApiAccess`
+`php artisan make:middleware ApiAccess`
+
+编辑`app/Http/Middleware/ApiAccess.php`
 
 ```
     public function handle($request, Closure $next)
