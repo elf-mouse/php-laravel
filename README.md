@@ -63,15 +63,3 @@ php artisan key:generate
 * `.env`
 
 > Your `.env` file __should not be committed__ to your application's source control, since each developer / server using your application could require a different environment configuration.
-
-### Maintenance Mode
-
-```
-php artisan down
-```
-
-```
-php artisan up
-```
-
-* Maintenance Mode Response Template in `resources/views/errors/503.blade.php`
