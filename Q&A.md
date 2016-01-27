@@ -18,3 +18,20 @@ A:
 rm -R ~/.composer/vendor/guzzlehttp
 composer global require [<packages>]
 ```
+
+---
+
+Q:
+
+```
+[Composer\Downloader\TransportException]
+The "*.zip" file could not be downloaded (HTTP/1.1 404 Not Found)
+```
+
+A:
+
+```
+composer require --no-update [package/name:version]
+composer update --no-scripts
+composer update
+```
