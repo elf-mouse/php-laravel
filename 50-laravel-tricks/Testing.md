@@ -9,9 +9,10 @@
     <env name="CACHE_DRIVER" value="array"/>
     <env name="SESSION_DRIVER" value="array"/>
     <env name="QUEUE_DRIVER" value="sync"/>
-    <env name="DB_DATABASE" value=":memory:"/>
-    <env name="DB_CONNECTION" value="sqlite"/>
-    <env name="TWILIO_FROM_NUMBER" value="+15005550006"/>
+    <env name="DB_HOST" value="localhost"/>
+    <env name="DB_DATABASE" value="my_db"/>
+    <env name="DB_USERNAME" value="root"/>
+    <env name="DB_PASSWORD" value="password"/>
 </php>
 ```
 
@@ -47,8 +48,9 @@ class TestCase extends Illuminate\Foundation\Testing\TestCase
     {
         $app = require __DIR__ . '/../bootstrap/app.php';
 
-        if (file_exists(dirname(__DIR__) . '/.env.test')) {
-            Dotenv::load(dirname(__DIR__), '.env.test');
+        if (file_exists(dirname(__DIR__).'/.env.testing')) {
+            $dotenv = new Dotenv\Dotenv(dirname(__DIR__), '.env.testing');
+            $dotenv->overload();
         }
 
         $app->make(Illuminate\Contracts\Console\Kernel::class)->bootstrap();
