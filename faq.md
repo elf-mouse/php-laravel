@@ -1,4 +1,4 @@
-## Q&A
+## FAQ
 
 Q: `composer update`
 
@@ -10,7 +10,7 @@ A: [Upgrading To 5.2.0 From 5.1](https://laravel.com/docs/5.2/upgrade)
 
 ---
 
-Q: Laravel installer fails at __guzzlehttp__
+Q: Laravel installer fails at **guzzlehttp**
 
 A:
 
